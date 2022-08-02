@@ -7,11 +7,16 @@ module.exports = {
     node: true
   },
 
+  parserOptions: {
+    sourceType: 'module'
+  },
+
   plugins: ['react', 'prettier'],
 
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:prettier/recommended',
     'prettier'
   ]
